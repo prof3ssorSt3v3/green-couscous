@@ -52,6 +52,42 @@
           grid-template-columns: 1fr 3fr;
         }
       }
+
+      .card {
+        container-type: inline-size;
+        container-name: card;
+        /* container: card / inline-size; */
+      }
+
+      @container card (width > 250px) {
+        .card__content h2 {
+          font-size: 2.5rem;
+          color: rebeccapurple;
+        }
+      }
+      /* @container card (min-width: 500px) { */
+      @container card (width > 500px) {
+        .card__content {
+          grid-template-columns: 1fr 2fr;
+
+          & > h2 {
+            font-size: 2rem;
+            color: red;
+          }
+        }
+      }
+      @container card (width > 700px) {
+        .card__content {
+          grid-template-columns: 1fr;
+
+          & > h2 {
+            font-size: 3.5rem;
+          }
+          & > p {
+            font-size: 1.8rem;
+          }
+        }
+      }
     </style>
   </head>
   <body>
