@@ -21,6 +21,32 @@
       h2 {
         font-family: var(--font-secondary);
       }
+      header {
+        margin-inline: 2rem;
+      }
+      .content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-inline: 2rem;
+      }
+      .card {
+        padding: 1rem;
+        border: 1px solid #333;
+        border-radius: 0.5rem;
+        margin-block: 1rem;
+      }
+
+      @media screen and (width > 50rem) {
+        .content {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media screen and (width > 60rem) {
+        .content {
+          grid-template-columns: 1fr 3fr;
+        }
+      }
     </style>
   </head>
   <body>
@@ -38,7 +64,7 @@
           </p>
         </div>
         <div class="card">
-          <h2></h2>
+          <h2>Card Title</h2>
           <p>
             Sequi illum maxime beatae dolore quas unde non laboriosam saepe aut omnis, veritatis cumque recusandae alias amet quidem dignissimos, eos voluptas blanditiis sapiente quod. Voluptates
             expedita labore perspiciatis, sunt quibusdam suscipit, commodi explicabo esse unde quia consectetur neque porro maxime id deserunt error autem tempora! Officiis quam recusandae dolorum
@@ -46,7 +72,7 @@
           </p>
         </div>
         <div class="card">
-          <h2></h2>
+          <h2>Card Title</h2>
           <p>
             A corporis maxime sapiente esse laudantium. Adipisci temporibus sequi modi sapiente, rerum necessitatibus similique, nulla non repellendus amet quae? Quidem repudiandae a quae illum error!
             Distinctio, qui laboriosam possimus fuga at alias molestiae consequuntur blanditiis eligendi maxime sit saepe delectus voluptas quis nostrum nesciunt dolore incidunt aut ex. Quos, tempora!
@@ -63,7 +89,7 @@
           </p>
         </div>
         <div class="card">
-          <h2></h2>
+          <h2>Card Title</h2>
           <p>
             Sequi illum maxime beatae dolore quas unde non laboriosam saepe aut omnis, veritatis cumque recusandae alias amet quidem dignissimos, eos voluptas blanditiis sapiente quod. Voluptates
             expedita labore perspiciatis, sunt quibusdam suscipit, commodi explicabo esse unde quia consectetur neque porro maxime id deserunt error autem tempora! Officiis quam recusandae dolorum
@@ -71,7 +97,7 @@
           </p>
         </div>
         <div class="card">
-          <h2></h2>
+          <h2>Card Title</h2>
           <p>
             A corporis maxime sapiente esse laudantium. Adipisci temporibus sequi modi sapiente, rerum necessitatibus similique, nulla non repellendus amet quae? Quidem repudiandae a quae illum error!
             Distinctio, qui laboriosam possimus fuga at alias molestiae consequuntur blanditiis eligendi maxime sit saepe delectus voluptas quis nostrum nesciunt dolore incidunt aut ex. Quos, tempora!
